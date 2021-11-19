@@ -147,7 +147,7 @@ const Buttons = () => {
                   splitButtons.map((button, index) => (
                     <div className="my-2" key={index}>
                     <button className={"btn btn-icon-split " + button.class}>
-                      <span class="icon text-white-50">
+                      <span className="icon text-white-50">
                         <i className={button.icon}></i>
                       </span>
                       <span className="text">{ button.name }</span>

@@ -61,7 +61,7 @@ const Colors = () => {
               <div className="card-body">
                 {
                   grayScale.map(intensity => (
-                    <div className={"p-3 bg-gray-" + intensity + ((intensity>400) ? (" text-white") : (""))}>{"bg-gray-" + intensity}</div>
+                    <div key={intensity} className={"p-3 bg-gray-" + intensity + ((intensity>400) ? (" text-white") : (""))}>{"bg-gray-" + intensity}</div>
                   ))
                 }
               </div>

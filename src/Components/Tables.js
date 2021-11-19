@@ -1,18 +1,27 @@
+import tablesData from "./tablesData.json";
+import $ from "jquery";
+import { useEffect } from "react";
+import "datatables.net";
+
 const Tables = () => {
-  
+
+  useEffect(() => {
+    $('#dataTable').DataTable();
+  }, []);
+
   return (
     <>
-      <div class="container-fluid">
-        <h1 class="h3 mb-2 text-gray-800">Tables</h1>
+      <div className="container-fluid">
+        <h1 className="h3 mb-2 text-gray-800">Tables</h1>
 
         {/* DataTables Example */}
-        <div class="card shadow mb-4">
-          <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+        <div className="card shadow my-4">
+          <div className="card-header py-3">
+            <h6 className="m-0 font-weight-bold text-primary">DataTables Example</h6>
           </div>
-          <div class="card-body">
-            <div class="table-responsive">
-              <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+          <div className="card-body">
+            <div className="table-responsive">
+              <table className="table table-bordered" id="dataTable" width="100%" cellSpacing="0">
                 <thead>
                   <tr>
                     <th>Name</th>
@@ -24,7 +33,17 @@ const Tables = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  
+                  {
+                    tablesData.map((row, index) => (
+                      <tr key={index}>
+                        {
+                          Object.keys(row).map((key, index) => (
+                            <td key={index}>{ row[key] }</td>
+                          ))
+                        }
+                      </tr>
+                    ))
+                  }
                 </tbody>
               </table>
             </div>

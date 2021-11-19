@@ -47,9 +47,9 @@ const OtherUtilities = () => {
                   Dropdown (no arrow)
                 </button>
                 <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a className="dropdown-item">Action</a>
-                  <a className="dropdown-item">Another action</a>
-                  <a className="dropdown-item">Something else here</a>
+                  <a href="/#" className="dropdown-item">Action</a>
+                  <a href="/#" className="dropdown-item">Another action</a>
+                  <a href="/#" className="dropdown-item">Something else here</a>
                 </div>
               </div>
               Add the <code>.no-arrow</code> class alongside the <code>.dropdown</code>

@@ -1,9 +1,6 @@
 import './App.css';
 import './sb-admin-2.css'
 import '@fortawesome/fontawesome-free/css/all.min.css';
-// import Sidebar from './Components/Navigation/Sidebar';
-// import TopNav from './Components/Navigation/TopNav';
-// import Footer from './Components/Navigation/Footer';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import DashboardLayout from './Components/DashboardLayout';
 import Home from './Components/Home';

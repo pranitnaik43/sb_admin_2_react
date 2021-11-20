@@ -1,4 +1,4 @@
-import tablesData from "./tablesData.json";
+import tablesData from "./Data/tablesData.json";
 import $ from "jquery";
 import { useEffect } from "react";
 import "datatables.net";

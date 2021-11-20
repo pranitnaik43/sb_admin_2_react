@@ -1,7 +1,7 @@
-import undraw_profile from "./img/undraw_profile.svg";
-import undraw_profile_1 from "./img/undraw_profile_1.svg";
-import undraw_profile_2 from "./img/undraw_profile_2.svg";
-import undraw_profile_3 from "./img/undraw_profile_3.svg";
+import undraw_profile from "../img/undraw_profile.svg";
+import undraw_profile_1 from "../img/undraw_profile_1.svg";
+import undraw_profile_2 from "../img/undraw_profile_2.svg";
+import undraw_profile_3 from "../img/undraw_profile_3.svg";
 
 const TopNav = () => {
 
